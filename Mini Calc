@@ -1,0 +1,49 @@
+print("Lets Calculate")
+print("This does the basic 4 math operations between 2 numbers")
+
+while True:
+    while True:
+        try:
+            x=float(input("First number: "))
+        except:
+            print("That is not a number...\n")
+        else:
+            break
+    while True:
+        y=input("Math Operation (+,-,* or /): ")
+        if y=="+" or y=="-" or y=="/" or y=="*":
+            break
+        else:
+            print("That is not a valid Math Operation...\n")
+    while True:
+        try:
+            z=float(input("Second number: "))
+        except:
+            print("That is not a valid number...\n")
+        else:
+            break   
+    if y=="+":
+      w=x+z
+      print(str(x) + "+" + str(z) + "=" + str(w))
+
+    if y=="-":
+      w=x-z
+      print(str(x) + "-" + str(z) + "=" + str(w))
+
+    if y=="*":
+      w=x*z
+      print(str(x) + "*" + str(z) + "=" + str(w))
+
+    if y=="/":
+      w=x/z
+      print(str(x) + "/" + str(z) + "=" + str(w))
+
+    a=input("\nDo you want to continue? (y/n):")
+    while True:
+        if a=="N" or a=="n" or a=="Y" or a=="y":
+            break
+        else:
+            print("HELLO... Read the Question la... Wah lan eh..")
+            a=input("\nDo you want to continue? (y/n):")
+    if a=="N" or a=="n":
+            break
